@@ -36,3 +36,6 @@ Step by step guide to becoming a modern frontend developer in 2024.
 ## Disclaimer
 
 The information presented on <b>this repository</b> is entirely fictional and created for educational purposes only. The data and content provided here should not be taken as factual or used for real-world applications.
+
+<hr>
+PF &#169; 2024
