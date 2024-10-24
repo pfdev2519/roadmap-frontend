@@ -1,6 +1,6 @@
 # Frontend Developer
 
-Step by step guide to becoming a modern frontend developer in 2024
+Step by step guide to becoming a modern frontend developer in 2024.
 
 ## Beginner Projects
 
