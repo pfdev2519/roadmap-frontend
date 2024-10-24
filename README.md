@@ -6,7 +6,7 @@ Step by step guide to becoming a modern frontend developer in 2024.
 
 - [x] [Single-Page CV](https://html-preview.github.io/?url=https://github.com/pfdev2519/roadmap-frontend/blob/main/single-page_cv/index.html) - HTML - [Project Details](https://roadmap.sh/projects/single-page-cv)
 
-- [ ] Basic HTML Website - HTML
+- [x] [Basic HTML Website](https://html-preview.github.io/?url=https://github.com/pfdev2519/roadmap-frontend/blob/main/basic_html_website%20/index.html) - HTML [Project Details](https://roadmap.sh/projects/basic-html-website)
 - [ ] Personal Portfolio - CSS
 - [ ] Changelog Component - CSS
 - [ ] Testimonial Cards - CSS
