@@ -13,23 +13,58 @@
     <header>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="projects.html">Projects</a></li>
           <li><a href="articles.html">Articles</a></li>
         </ul>
       </nav>
     </header>
-
+    <hr />
     <main>
       <section>
-        <h1>Contact Us</h1>
-        <p></p>
+        <h1>How can we help?</h1>
+        <form action="/action_page.php" method="get">
+          <fieldset>
+            <legend>We'd love to hear from you.</legend>
+            <p>
+              <label for="name">Name:* </label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter your name"
+                required />
+            </p>
+            <p>
+              <label for="email">E-mail:* </label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter your e-mail"
+                required />
+            </p>
+
+            <p>
+              <label for="message">Message:* </label><br />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Write your message here"
+                required></textarea>
+            </p>
+            <p>* required</p>
+            <button type="submit">Send</button>
+          </fieldset>
+        </form>
       </section>
+      <br />
 
       <hr />
-
       <hr />
     </main>
+    <footer>Roadmap Frontend &#169; 2024</footer>
   </body>
-  <footer>Paula Ferreira &#169; 2024</footer>
 </html>
