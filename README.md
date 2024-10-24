@@ -4,7 +4,8 @@ Step by step guide to becoming a modern frontend developer in 2024
 
 ## Beginner Projects
 
-- [x] Single-Page CV - HTML
+- [x] [Single-Page CV](https://html-preview.github.io/?url=https://github.com/pfdev2519/roadmap-frontend/blob/main/single-page_cv/index.html) - HTML - [Project Details](https://roadmap.sh/projects/single-page-cv)
+
 - [ ] Basic HTML Website - HTML
 - [ ] Personal Portfolio - CSS
 - [ ] Changelog Component - CSS
@@ -28,6 +29,10 @@ Step by step guide to becoming a modern frontend developer in 2024
 - [ ] Reddit Client- JavaScript
 - [ ] Temperature Converter- JavaScript
 
-<hr>
+## Roadmap diagram
 
-[Roadmap diagram](frontend.pdf)
+[pdf](frontend.pdf)
+
+## Disclaimer
+
+The information presented on <b>this repository</b> is entirely fictional and created for educational purposes only. The data and content provided here should not be taken as factual or used for real-world applications.
