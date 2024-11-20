@@ -6,8 +6,10 @@
     <meta
       name="description"
       content="Home page of the project 'Single-Page CV' from roadmap.sh" />
-    <link rel=”stylesheet”
-    href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link rel="stylesheet" href="./style/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/7e2de64919.js"
+      crossorigin="anonymous"></script>
     <title>Single-Page CV</title>
     <style>
       body {
@@ -18,7 +20,29 @@
   </head>
 
   <body>
-    <main>
+    <header class="header top-nav">
+      <figure class="avatar">
+        <img
+          src="/images/Sarah.png"
+          alt="Sarah's avatar"
+          class="image"
+          height="100" />
+        <figcaption>
+          <p>Sarah Peixoto</p>
+        </figcaption>
+      </figure>
+      <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="">Another Page</a></li>
+        <li><a href="">Another Page</a></li>
+        <li><a href="#social">Contact</a></li>
+      </ul>
+      <nav role="navigation" class="navbar"></nav>
+    </header>
+    <main class="main">
       <hr />
 
       <section>
@@ -130,17 +154,54 @@
         manual coding by 20%.
       </section>
 
-      <section>
-        <h2 style="color: blueviolet; font-weight: 600; font-size: 1.1rem">
-          Across the Internet
+      <section class="social" id="social">
+        <h2>
+          <span class="highlight"> Contact me </span>
         </h2>
-        <a href="https://github.com/">GitHub</a>
-        <a href="https://www.linkedin.com/" class="linkedin"> Linkedin </a>
+        <div class="icon-container">
+          <a href="https://github.com/" target="_blank" class="social-icon">
+            <i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/"
+            target="_blank"
+            class="social-icon"
+            ><i class="fa-brands fa-linkedin-in"></i>
+          </a>
+        </div>
+        <form method="get" class="form-container">
+          <div class="input-container">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              class="name"
+              placeholder="Enter your name"
+              required />
+          </div>
+          <div class="input-container">
+            <label for="name">Email</label>
+            <input
+              type="email"
+              class="email"
+              placeholder="Enter your email"
+              required />
+          </div>
+          <div class="input-container">
+            <label for="name">Message</label>
+            <textarea
+              type="text"
+              class="name"
+              cols="30"
+              rows="5"
+              placeholder="Enter your message"></textarea>
+          </div>
+          <button type="submit" class="button">Send</button>
+        </form>
       </section>
       <hr />
     </main>
     <footer>
-      <p style="text-align: center">Stella Peixoto &#169; 2024</p>
+      <p style="text-align: center">Sarah Peixoto &#169; 2024</p>
     </footer>
   </body>
 </html>
