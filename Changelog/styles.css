@@ -1,0 +1,206 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --light: #fff;
+  --bg-clr: #282a35;
+
+  --yellow-bg: #ffffcc;
+  --yellow-text: #585800;
+
+  --red-bg: #ffcccc;
+  --red-text: #580000;
+
+  --blue-bg: #ccddff;
+  --blue-text: #001d58;
+
+  --green-bg: #ddffcc;
+  --green-text: #1d5800;
+}
+
+body {
+  height: 100vh;
+  background: var(--bg-clr);
+  color: var(--light);
+}
+
+/* wrapper */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+  /* width: 80%; */
+  background: var(--bg-clr);
+}
+
+.timeline .heading {
+  margin-bottom: 150px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  height: 100px;
+}
+
+/* vertical line */
+.timeline::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background: var(--light);
+  top: 150px;
+  bottom: 10px;
+  left: 50%;
+  z-index: 0;
+}
+
+/* cards container */
+.card {
+  padding: 30px;
+  position: relative;
+  background: inherit;
+  width: 50%;
+  margin: -80px 0;
+  z-index: 1;
+
+  /* background: green; */
+}
+
+.card-box {
+  padding: 20px 30px;
+  position: relative;
+  background: inherit;
+  width: 100%;
+  color: inherit;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  z-index: 3;
+}
+
+.card:last-child {
+  margin-bottom: 50px;
+}
+/* place the cards left and right */
+.card:nth-child(even) {
+  margin-left: 2px;
+  left: 50%;
+}
+
+.card:nth-child(odd) {
+  margin-left: -2px;
+  left: 0px;
+}
+
+/* dots */
+.card::after {
+  content: " ";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border: 5px solid var(--bg-clr);
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.card:nth-child(odd):after {
+  right: -17px;
+}
+
+.card:nth-child(even):after {
+  left: -17px;
+}
+/* end dots */
+
+/* line */
+.card::before {
+  content: " ";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20%;
+  height: 2px;
+  z-index: 3;
+}
+
+.card:nth-child(odd)::before {
+  right: -10px;
+}
+
+.card:nth-child(even)::before {
+  left: 10px;
+}
+/* end line */
+
+/* card color */
+.card:nth-child(2) .card-box,
+.card:nth-child(2)::before,
+.card:nth-child(2)::after {
+  background: var(--yellow-bg);
+  color: var(--yellow-text);
+}
+
+.card:nth-child(3) .card-box,
+.card:nth-child(3)::before,
+.card:nth-child(3)::after {
+  background: var(--red-bg);
+  color: var(--red-text);
+}
+
+.card:nth-child(4) .card-box,
+.card:nth-child(4)::before,
+.card:nth-child(4)::after {
+  background: var(--blue-bg);
+  color: var(--blue-text);
+}
+
+.card:nth-child(5) .card-box,
+.card:nth-child(5)::before,
+.card:nth-child(5)::after {
+  background: var(--green-bg);
+  color: var(--green-text);
+}
+
+@media only screen and (max-width: 780px) {
+  /* adjust wrapper width */
+  .timeline {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* move the vertical line to left */
+  .timeline::after {
+    left: 35px;
+    margin-left: -3px;
+  }
+  /* move all cards to right */
+  .card:nth-child(even),
+  .card:nth-child(odd) {
+    margin-left: 0px;
+    left: 35px;
+  }
+
+  /* margin between cards */
+  .card {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* line */
+  .card:nth-child(odd):before,
+  .card:nth-child(even):before {
+    left: -15px;
+  }
+
+  /* dot */
+  .card:nth-child(odd):after,
+  .card:nth-child(even):after {
+    left: -23px;
+  }
+}
